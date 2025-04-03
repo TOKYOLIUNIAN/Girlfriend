@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>球球你,原谅我~~</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #ff69b4;
+        }
+        .message {
+            background-color: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .emoji {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .accept {
+            background-color: #ff69b4;
+            color: white;
+        }
+        .consider {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+<div class="message">
+    <img src="apologize/cry.png" class="emoji">
+    <h2>对不起蔡宝宝：</h2>
+    <p>我也知道,你肯定有的时候也是考虑到我的感受</p>
+    <p>但是我却很少在跟你说话的时候先去考虑你的感受 o(╥﹏╥)o </p>
+    <p>然后再去和你去交流,这就容易导致,我经常惹你生气(╥╯^╰╥)</p>
+    <p>我以后一定会多加换位思考,让你尽量感受的比较舒适一点</p>
+
+    <button class="accept" onclick="response('yes')">❤️ 好呀 ❤️</button>
+    <button class="consider" onclick="response('no')">需要好好考虑考虑</button>
+
+    <p id="reply"></p>
+</div>
+
+<script>
+    function response(answer) {
+        if (answer === 'yes') {
+            document.getElementById('reply').innerHTML =
+                '❤️❤️❤️❤️❤️❤️太棒啦！爱你哟！❤️❤️❤️❤️❤️❤️';
+            // 立即跳转到 final.html 页面
+            window.location.href = "opologize final.html";
+        } else {
+            document.getElementById('reply').innerHTML =
+                '❤️❤️❤️❤️❤️❤️没关系的❤️❤️❤️❤️❤️❤️';
+            // 立即跳转到 next_stage.html 页面
+            window.location.href = "opologize.next1.html";
+        }
+    }
+</script>
+</body>
+</html>

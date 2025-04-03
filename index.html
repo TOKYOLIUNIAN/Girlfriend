@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蔡宝宝和强宝宝的专属小窝</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff0f5;
+            text-align: center;
+        }
+        .days-count {
+            color: #ff69b4;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+        .photo-container {
+            position: relative;
+            width: 200px;
+        }
+        .photo-container img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .photo-container img:hover {
+            transform: scale(1.05);
+        }
+        .notification {
+            position: relative;
+            display: inline-block;
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+            padding-right: 20px;
+        }
+        .notification .badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<h1>你终于来了媳妇儿,这是我专门给你写的专属网站!!!</h1>
+<h1>只有我们两个可以打开哦!!!!❤️❤️❤️</h1>
+<p>李智强❤️蔡仪宁在一起已经 <span id="days-count" class="days-count">39</span> 天。</p>️
+<h2>这里可以看到以前你看过的动漫和剧集!!!</h2>
+<h2>以后还会在这里更新更多有意思的内容!!!</h2>
+<h3>我想如果可以的话我们可以在这里存储我们的永久回忆 ❤️❤️❤️ (目前版本更新1.2,以后还会有更多版本,敬请期待~~~) </h3>
+<h3>我会在这里持续更新这个网站,我会永远珍惜我们之间的感情❤️❤️❤️</h3>
+<nav>
+
+</nav>
+<h1><a href="photos.html">小宝宝的照片</a></h1>
+
+<a href="reconciliation.html" class="notification">
+    📨 新消息
+    <span class="badge">1</span>
+    <img src="apologize/apoologize.png" height="100" width="100"/>
+</a>
+
+
+<script>
+    function updateDays() {
+        const targetDate = new Date("2025-01-05");
+        const currentDate = new Date();
+        const timeDifference = currentDate - targetDate;
+        const daysPassed = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        document.getElementById('days-count').textContent = daysPassed;
+    }
+
+    window.onload = updateDays;
+</script>
+</body>
+</html>

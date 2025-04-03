@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>再考虑一下</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f9f9f9;
+        }
+        .message {
+            background-color: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .emoji {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 15px 30px;
+            margin: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .accept {
+            background-color: #ff69b4;
+            color: white;
+        }
+        .consider {
+            background-color: #ccc;
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="message">
+    <img src="apologize/apologize_large.png" alt="道歉表情包" class="emoji">
+    <h2>亲爱的蔡宝宝：</h2>
+    <p>我再次向你诚挚地道歉，希望你能原谅我。</p>
+    <p>请再给我一次机会，我会改正错误。</p>
+
+    <button class="accept" onclick="location.href='final.html'">❤️ 好吧 ❤️</button>
+    <button class="consider" onclick="alert('请再考虑一下吧~')">还是需要考虑</button>
+</div>
+</body>
+</html>

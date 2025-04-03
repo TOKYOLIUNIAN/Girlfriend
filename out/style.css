@@ -1,0 +1,8 @@
+h1 {
+    color: red;
+}
+#days-count {
+    color: red;          /* 设置文字颜色为红色 */
+    font-weight: bold;   /* 设置文字为粗体 */
+    font-size: 40px;     /* 设置文字大小为40px（根据需要可以调整） */
+}

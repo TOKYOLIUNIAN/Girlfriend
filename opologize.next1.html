@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原谅我吧,小宝宝~~</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #ff69b4;
+        }
+        .message {
+            background-color: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .emoji {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding:  50px 50px;
+            margin: 10px;
+            font-size: 30x;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .accept {
+            background-color: #ff69b4;
+            color: white;
+        }
+        .consider {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+<div class="message">
+    <img src="apologize/cry1.png" class="emoji">
+    <h2>我知道有时候，我的情绪或者表达方式可能让你觉得不被理解(╥╯^╰╥)</h2>
+    <h2>甚至会让你委屈难过。其实，我并不是故意的，(╥╯^╰╥)</h2>
+    <h2>我只是有时候没能及时调整自己的状态(╥╯^╰╥)</h2>
+    <h2>没有用最好的方式和你沟通。 o(╥﹏╥)o</h2>
+
+    <button class="accept" onclick="response('yes')">❤️ 好呀好呀 ❤️</button>
+
+    <p id="reply"></p>
+</div>
+
+<script>
+    function response(answer) {
+        if (answer === 'yes') {
+            document.getElementById('reply').innerHTML =
+                '❤️❤️❤️❤️❤️❤️太棒啦！爱你哟！❤️❤️❤️❤️❤️❤️';
+            // 立即跳转到 final.html 页面
+            window.location.href = "opologize final.html";
+        }
+    }
+</script>
+</body>
+</html>
